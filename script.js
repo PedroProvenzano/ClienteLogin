@@ -10,7 +10,7 @@ boton_crear.addEventListener('click', () => {
     pass = inputPass.value;
 
     if(pass.length <= 5){
-        consola.innerText = "La contrase;a es muy corta";
+        consola.innerText = "La contraseña es muy corta";
         inputPass.value = "";
         return
     }
@@ -23,7 +23,7 @@ boton_crear.addEventListener('click', () => {
         "password": inputPass.value
       }
 
-    fetch(`http://localhost:3000/users`, 
+    fetch(`https://login-mrklus-backend.herokuapp.com/users`, 
     { 
         method: "POST", 
         body: JSON.stringify(bodyCont),
@@ -34,7 +34,7 @@ boton_crear.addEventListener('click', () => {
           'sec-fetch-site': 'same-origin',
           'sec-fetch-mode': 'cors',
           'sec-fetch-dest': 'empty',
-          referer: 'http://localhost:3000/users',
+          referer: 'https://login-mrklus-backend.herokuapp.com/users',
           'accept-language': 'es-US,es-419;q=0.9,es;q=0.8,en;q=0.7',
           'content-type': 'application/json',
           host: 'localhost:3000',
@@ -64,7 +64,7 @@ boton_send.addEventListener('click', () => {
         "password": inputPass.value
       }
 
-    fetch(`http://localhost:3000/users/login`, 
+    fetch(`https://login-mrklus-backend.herokuapp.com/users/login`, 
     { 
         method: "POST", 
         body: JSON.stringify(bodyCont),
@@ -75,7 +75,7 @@ boton_send.addEventListener('click', () => {
           'sec-fetch-site': 'same-origin',
           'sec-fetch-mode': 'cors',
           'sec-fetch-dest': 'empty',
-          referer: 'http://localhost:3000/users',
+          referer: 'https://login-mrklus-backend.herokuapp.com/users',
           'accept-language': 'es-US,es-419;q=0.9,es;q=0.8,en;q=0.7',
           'content-type': 'application/json',
           host: 'localhost:3000',
