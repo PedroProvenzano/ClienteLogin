@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    height: 2rem;
+    width: 12rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-bottom: 4px solid rgb(61, 207, 105);
+    background-color: transparent;
+    font-size: 2rem;
+}
+input:focus{
+    outline: none;
+}
+.botonSend,
+.botonCrear{
+    margin-top: 2rem;
+    border: 3px solid rgb(193, 248, 179);
+    color: rgb(65, 116, 36);
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    user-select: none;
+    background-color: rgb(163, 233, 233);
+    transition: all 1s;
+}
+.botonSend{
+    display: none;
+}
+.botonSend:hover,
+.botonCrear:hover{
+    cursor: pointer;
+    background-color: rgb(114, 201, 201);
+    border: 3px dotted rgb(193, 248, 179);
+}
+.consola{
+    border: 3px solid rgb(193, 248, 179);
+    background-color: rgb(163, 233, 233);
+    color: rgb(65, 116, 36);
+    margin: 2rem;
+    height: 10rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
