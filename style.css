@@ -155,6 +155,7 @@ h1{
     display: none;
     margin-top: 1rem;
     flex-direction: column;
+    height: 32rem;
 }
 .editDescription{
     display: flex;
