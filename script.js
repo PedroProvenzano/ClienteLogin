@@ -8,6 +8,7 @@ const mainSection = document.getElementById("main_section");
 const loginSection = document.getElementById("login_section");
 const social_section = document.getElementById('social_section');
 const edit_section = document.getElementById("edit_section");
+const formPronombres = document.getElementById('formPronombres');
 
 const url = "https://login-mrklus-backend.herokuapp.com";
 // https://login-mrklus-backend.herokuapp.com
@@ -83,6 +84,7 @@ boton_crear.addEventListener('click', () => {
         inputUser.value = "";
         titulo.innerText = "Login";
         boton_crear.style.display = "none";
+        formPronombres.style.display = "none";
       }
     })  
 });
@@ -360,7 +362,10 @@ function logout()
           tokenAuth: "",
           refreshToken: ""
         }
-        social_section.innerHTML = `<h2>Other users</h2>`
+        social_section.innerHTML = `<h2>Other users</h2>`;
+        consola.innerText = "";
+        formPronombres.style.display = "flex";
+        boton_crear.style.display = "flex";
       }
     }
     catch(err)

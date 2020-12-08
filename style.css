@@ -104,7 +104,7 @@ h1{
 .main_section,
 .edit_section{
     display: none;
-    margin-top: 10rem;
+    margin-top: 2rem;
     width: 70%;
     height: 22rem;
     border: 3px solid rgb(193, 248, 179);
@@ -117,7 +117,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20rem;
+    width: 10rem;
     height: 10rem;
     border: 3px solid rgb(193, 248, 179);
 }
@@ -155,7 +155,7 @@ h1{
     display: none;
     margin-top: 1rem;
     flex-direction: column;
-    height: 32rem;
+    height: 50%;
 }
 .editDescription{
     display: flex;
@@ -217,6 +217,8 @@ h2{
     align-self: flex-start;
 }
 .socialCard{
+    margin-top: 2rem;
+    width: 100%;
     display: flex;
     height: 22rem;
     border: 3px solid rgb(193, 248, 179);
