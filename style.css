@@ -227,3 +227,9 @@ h2{
     padding: 4rem;
     flex-direction: row;
 }
+.edit_section,
+.social_section,
+.main_section,
+.login_section{
+    max-width: 40%;
+}

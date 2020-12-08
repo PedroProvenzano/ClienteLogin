@@ -461,7 +461,6 @@ function refreshData(res)
   profileDescription.innerHTML = `${res.description}`;
   const profileLinks = document.getElementById('profileLinks');
   profileLinks.innerHTML = '';
-  console.log(res.links.length);
   if(res.links.length == 0)
   {
     profileLinks.innerHTML = `No hay links`
