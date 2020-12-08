@@ -224,7 +224,12 @@ function update()
     }
     else{
       // Agregar algun tipo de aviso al usuario
-      console.log(res);
+      alert("Descripción actualizada");
+      User.description = bodyCont.description;
+      User.links = bodyCont.links;
+      refreshData(User);
+      editClicks = 0;
+      edit_section.style.display = "none";
     }
   }) 
 }
