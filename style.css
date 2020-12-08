@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 h1{
     font-size: 3rem;
@@ -105,7 +106,7 @@ h1{
 .edit_section{
     display: none;
     margin-top: 2rem;
-    width: 70%;
+    width: 100%;
     height: 22rem;
     border: 3px solid rgb(193, 248, 179);
     background-color: rgb(163, 233, 233);
@@ -119,10 +120,11 @@ h1{
     align-items: center;
     width: 10rem;
     height: 10rem;
-    border: 3px solid rgb(193, 248, 179);
+    
 }
 .profilePicImg{
     height: 100%;
+    border: 3px solid rgb(193, 248, 179);
 }
 .textContainer{
     margin-left: 2rem;
@@ -156,6 +158,7 @@ h1{
     margin-top: 1rem;
     flex-direction: column;
     height: 50%;
+    width: 100%;
 }
 .editDescription{
     display: flex;
@@ -211,7 +214,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 100%;
 }
 h2{
     align-self: flex-start;
@@ -232,4 +235,52 @@ h2{
 .main_section,
 .login_section{
     max-width: 40%;
+    transition: all 1s;
+}
+@media only screen and (max-width: 1300px) {
+    .edit_section,
+    .social_section,
+    .main_section,
+    .login_section 
+    {  
+      max-width: 80%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .edit_section,
+    .social_section,
+    .main_section,
+    .login_section 
+    {  
+      max-width: 100%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    /* Tarjeta Perfil personal */
+    .main_section,
+    .edit_section{
+        padding: 1rem;
+    }
+    .profilePic{
+        width: auto;
+        flex-direction: row;
+    }
+    .main_section{
+        flex-direction: column;
+    }
+    .textContainer{
+        margin-top: 1rem;
+    }
+    .botonEdit,
+    .botonLogout{
+        font-size: 1rem;
+        width: 5rem;
+        margin: 0.2rem 0 0 3rem;
+    }
+    .socialCard{
+        flex-direction: column;
+        height: 23rem;
+        padding: 1rem;
+    }
+
 }
