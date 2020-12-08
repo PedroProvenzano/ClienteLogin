@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
-section{
+.login_section{
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,8 @@ h1{
     flex-direction: column;
     align-items: center;
 }
-input{
+.username,
+.password{
     height: 2rem;
     width: 12rem;
     margin-top: 1.5rem;
@@ -33,11 +34,34 @@ input{
     background-color: transparent;
     font-size: 2rem;
 }
-input:focus{
+.username:focus,
+.password:focus{
     outline: none;
 }
+.formPronombres{
+    font-size: larger;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+.pronombresDiv{
+    display: flex;
+    flex-direction: row;
+}
+.containerBoton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
 .botonSend,
-.botonCrear{
+.botonCrear,
+.botonLogin,
+.botonEdit,
+.editSaveButton,
+.botonLogout{
     margin-top: 2rem;
     border: 3px solid rgb(193, 248, 179);
     color: rgb(65, 116, 36);
@@ -56,7 +80,11 @@ input:focus{
     display: none;
 }
 .botonSend:hover,
-.botonCrear:hover{
+.botonCrear:hover,
+.botonLogin:hover,
+.botonEdit:hover,
+.editSaveButton:hover,
+.botonLogout:hover{
     cursor: pointer;
     background-color: rgb(114, 201, 201);
     border: 3px dotted rgb(193, 248, 179);
@@ -70,4 +98,129 @@ input:focus{
     width: 25rem;
     font-size: 1.5rem;
     padding: 1rem;
+}
+
+/* Seccion Main */
+.main_section,
+.edit_section{
+    display: none;
+    margin-top: 10rem;
+    width: 70%;
+    height: 22rem;
+    border: 3px solid rgb(193, 248, 179);
+    background-color: rgb(163, 233, 233);
+    color: rgb(65, 116, 36);
+    padding: 4rem;
+    flex-direction: row;   
+}
+.profilePic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 10rem;
+    border: 3px solid rgb(193, 248, 179);
+}
+.profilePicImg{
+    height: 100%;
+}
+.textContainer{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.profileUsername{
+    font-size: 2rem;
+}
+.profileDescription{
+    margin-top: 1rem;
+}
+.botonEdit,
+.botonLogout{
+    margin-top: 1rem;
+    background-color: rgb(133, 204, 204);
+}
+.profileLinks{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Boton de logout */
+
+
+
+/* Seccion Edit */
+.edit_section{
+    display: none;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+.editDescription{
+    display: flex;
+    flex-direction: column;
+}
+.editDescription p,
+.editLinks p{
+    font-size: larger;
+}
+.editSaveButton{
+    margin-top: 1rem;
+}
+.editDescriptionTA{
+    resize: none;
+    padding: 1rem;
+    font-size: medium;
+}
+.editLinksInput{
+    height: 2rem;
+    width: 100%;
+}
+.inputPlus,
+.inputMinus{
+    font-size: 2rem;
+    border: 3px solid rgb(193, 248, 179);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.inputPlus:hover,
+.inputMinus:hover{
+    cursor: pointer;
+}
+.inputLinkContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Upload image */
+.inputImgContainer{
+    margin-top: 1rem;
+}
+
+
+/* Social section */
+.social_section{
+    display: none;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+h2{
+    align-self: flex-start;
+}
+.socialCard{
+    display: flex;
+    height: 22rem;
+    border: 3px solid rgb(193, 248, 179);
+    background-color: rgb(163, 233, 233);
+    color: rgb(65, 116, 36);
+    padding: 4rem;
+    flex-direction: row;
 }

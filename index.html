@@ -8,23 +8,97 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
+    <section class="login_section" id="login_section">
         <h1 id="titulo">Create account</h1>
         <div class="contenedor">
             
             <input class="username" id="username" type="text" placeholder="Username">
             <input type="password" id="password" class="password" placeholder="Password">
-            <div class="botonCrear" id="botonCrear">
-                Create
-            </div>
-            <div class="botonSend" id="botonSend">
-                Send
+            <form class="formPronombres">
+                <div class="pronombresDiv">
+                    <input id="el" type="radio" name="pronombre" value="Él">
+                    <label for="Él">Él</label>
+                </div>
+                <div class="pronombresDiv">
+                    <input id="ella" type="radio" name="pronombre" value="Ella">
+                    <label for="Ella">Ella</label>
+                </div>
+                <div class="pronombresDiv">
+                    <input id="sinEspecificar" name="pronombre" type="radio" value="SinEspecificar">
+                    <label for="SinEspecificar">Sin especificar</label>
+                </div>
+            </form>
+            <div class="containerBoton">
+                <div class="botonCrear" id="botonCrear">
+                    Create
+                </div>
+                <div class="botonLogin" id="botonLogin">
+                    Login
+                </div>
             </div>
 
+
             <div class="consola" id="consola">
+                
+            </div>
+        </div>
+    </section>
+    <section class="main_section" id="main_section">
+        <div class="profilePic" id="profilePic">
+            <img class="profilePicImg" id="profilePicImg" src="./monke.png" alt="profile picture">
+            <div class="botonEdit" id="botonEdit">
+                Edit
+            </div>
+            <div class="botonLogout" id="botonLogout">
+                Logout
+            </div>
+        </div>
+        <div class="textContainer" id="textContainer">
+            <div class="profileUsername" id="profileUsername">
+
+            </div>
+            <div class="profileGenre" id="profileGenre">
+
+            </div>
+            <div class="profileDescription" id="profileDescription">
+
+            </div>
+            <div class="profileLinks" id="profileLinks">
 
             </div>
         </div>
+    </section>
+    <section class="edit_section" id="edit_section">
+        <div class="editDescription" id="editDescription">
+            <p>
+                New description
+            </p> 
+            <textarea id="editDescriptionTA" class="editDescriptionTA" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="editLinks" id="editLinks">
+            <p>
+                New links
+            </p>
+            <div class="inputLinkContainer" id="inputLinkContainer">
+                <input type="text" class="editLinksInput" id="editLinksInput">
+                <div class="inputPlus" id="inputPlus">
+                    +
+                </div>
+                <div class="inputMinus" id="inputMinus">
+                    -
+                </div>
+            </div>
+        </div>
+        <div class="inputImgContainer">
+            <input type="file" class="inputImg" id="inputImg">
+        </div>
+            <div class="editSaveButton" id="editSaveButton">
+                Save
+            </div>
+    </section>
+    <section class="social_section" id="social_section">
+        <h2>Other users</h2>
+
     </section>
     <script src="script.js"></script>
 </body>
